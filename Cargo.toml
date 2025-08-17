@@ -1,0 +1,40 @@
+[package]
+name = "rs-ntstrings2arrow"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+
+[dependencies.arrow]
+version = "55"
+default-features = false
+features = [
+]
+
+[dependencies.async-stream]
+version = "0"
+default-features = false
+features = [
+]
+
+[dependencies.futures]
+version = "0"
+default-features = false
+features = [
+	"async-await",
+	"executor",
+	"std",
+]
+
+[dependencies.tokio]
+version = "1"
+default-features = false
+features = [
+	"fs",
+	"rt-multi-thread",
+	"io-util",
+]
